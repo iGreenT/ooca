@@ -1,6 +1,12 @@
 import { Users } from 'src/users/entities/users.entity';
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
 
+/**
+ * set default
+ * id 1 : Admin
+ * id 2 : client
+ */
+
 @Entity()
 export class UserType {
   @PrimaryGeneratedColumn()

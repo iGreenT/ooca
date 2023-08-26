@@ -20,12 +20,12 @@ export class Users {
 
   @Column()
   username: string;
-
+  
   @Column()
   password: string;
-
+  
   @Column()
-  email: string;
+  name: string;
 
   @Column({ type: "int", width: 2 })
   user_type_id: number;
