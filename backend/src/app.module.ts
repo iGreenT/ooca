@@ -11,9 +11,8 @@ import { ProvidersModule } from './providers/providers.module';
 import { AppointmentsModule } from './appointments/appointments.module';
 import { Provider } from './providers/entities/provider.entity';
 import { Appointment } from './appointments/entities/appointment.entity';
-import { AppointmentStatus } from './appointment_status/entities/appointment_status.entity';
-import { AppointmentStatusModule } from './appointment_status/appointment_status.module';
 import { UserTypesModule } from './user_types/user_types.module';
+import { UserType } from './user_types/entities/user_type.entity';
 
 @Module({
   imports: [
@@ -29,7 +28,7 @@ import { UserTypesModule } from './user_types/user_types.module';
         Company,
         Provider,
         Appointment,
-        AppointmentStatus],
+        UserType],
       migrations: ["./migrations/**/*.ts"],
       synchronize: true,
 
@@ -38,7 +37,6 @@ import { UserTypesModule } from './user_types/user_types.module';
     CompaniesModule,
     ProvidersModule,
     AppointmentsModule,
-    AppointmentStatusModule,
     UserTypesModule,
   ],
   controllers: [AppController],
