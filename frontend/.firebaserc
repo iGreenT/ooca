@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "test-ooca",
+    "test-ooca": "test-ooca"
+  },
+  "targets": {},
+  "etags": {}
+}
